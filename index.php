@@ -134,7 +134,7 @@
         <a href=""><li class="subjects-item">Создание игр</li></a>
         <a href=""><li class="subjects-item">Web-разработка</li></a>
         <a href=""><li class="subjects-item">Мультимедиа</li></a>
-        <a href=""><li class="subjects-item">Шахматы</li></a>
+        <a href="chess.php"><li class="subjects-item">Шахматы</li></a>
         <a href=""><li class="subjects-item">3D-моделирование и дизайн</li></a>
         <a href=""><li class="subjects-item">Английский язык</li></a>
         <a href=""><li class="subjects-item">Блогинг</li></a>

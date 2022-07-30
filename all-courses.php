@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Все курсы</title>
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-    <!--Импорт шапки сайта-->
+    <!--Импорт шапки руыайта-->
     <?php include('blue-header.php'); ?>
     <h1 class="all-courses-title">Все программы обучения</h1>
     <div class="filters">
@@ -107,7 +107,7 @@
                 <a href="">
                     <li class="branch-nav-item">Мультимедиа</li>
                 </a>
-                <a href="">
+                <a href="chess.php">
                     <li class="branch-nav-item">Шахматы</li>
                 </a>
                 <a href="">
