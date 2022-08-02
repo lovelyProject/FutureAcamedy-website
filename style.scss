@@ -629,6 +629,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
+    cursor: pointer;
 
     & :hover {
         transition: .8s;
@@ -682,7 +683,7 @@ owl-svg {
 }
 
 .footer {
-    max-width: 1400px;
+    max-width: 100%;
     background-color: #00093C;
     padding: 70px 0 56px 0;
     margin: 0 auto;
@@ -754,6 +755,8 @@ owl-svg {
 }
 
 .footer-container {
+    margin: 0 auto;
+    width: 1180px;
     display: flex;
     justify-content: space-evenly;
 
@@ -993,6 +996,10 @@ owl-svg {
 .chess-main-time {
     display: flex;
     margin: 37px 0 42px 0;
+
+    & hr {
+        width: 100%;
+    }
 }
 
 .chess-time-item {
@@ -1000,11 +1007,16 @@ owl-svg {
 }
 
 .price {
+    max-width: 285px;
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
     margin-bottom: 33px;
     display: block;
+
+    & hr {
+        width: 100%;
+    }
 }
 
 .free-lesson {
@@ -1035,16 +1047,18 @@ owl-svg {
     text-decoration: none;
     border: none;
     font-family: 'Montserrat';
-
-    &:hover {
-        cursor: pointer;
-    }
-
+    cursor: pointer
 }
 
 .couse-link {
     display: inline-block;
     text-decoration: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height:     26px;
+
 
 }
 
@@ -1101,7 +1115,7 @@ owl-svg {
 
 .chess-aims {
     display: flex;
-    
+
 }
 
 .chess-figures {
@@ -1130,48 +1144,300 @@ owl-svg {
 .chess-figure {
     margin-bottom: 16px
 }
-.chess-figures4{
+
+.chess-figures4 {
     margin-right: 0 !important;
 }
-.chess-video-container{
+
+.chess-video-container {
     max-width: 1180px;
     @include centre;
     display: flex;
     justify-content: center;
     margin-bottom: 68px;
 }
-.chess-video-item{
-   border-radius: 20px;
-    
+
+.chess-video-item {
+    border-radius: 20px;
+
 }
-.chess-description-container{
+
+.chess-description-container {
     max-width: 1180px;
     @include centre;
     margin-bottom: 30px;
-    & h2{
+
+    & h2 {
         @include reset;
         margin-bottom: 20px;
         font-weight: 700;
-font-size: 36px;
-line-height: 34px;
+        font-size: 36px;
+        line-height: 34px;
     }
-    & p{
+
+    & p {
         @include reset;
         font-weight: 400;
-font-size: 18px;
-line-height: 26px;
+        font-size: 18px;
+        line-height: 26px;
         max-width: 900px;
         margin-bottom: 31px;
     }
 }
-.chess-icons{
+
+.chess-icons {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
-.chess-ico{
+
+.chess-ico {
     width: 180px;
-    & span{
+
+    & span {
         display: inline-block;
     }
 
+}
+
+.chess-bg-container {
+    width: 100%;
+    background-size: cover;
+    background: url(img/chess-bg.png) 0 0 repeat;
+
+}
+
+.chess-bg-items {
+    @include centre;
+
+}
+
+.chess-bg-item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin-bottom: 52px;
+
+
+    & p {
+        width: 486px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 91px;
+
+    }
+}
+
+.chess-btn-container {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.chess-bg-btn {
+    background: #F7941D;
+    border-radius: 10px;
+    border: none;
+    box-shadow: none;
+
+    padding: 12px 21px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: #fff;
+    z-index: 2;
+    cursor: pointer;
+    font-family: 'Montserrat'
+
+}
+
+.chess-underbg {
+    background-color: #00093C;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 84px;
+}
+
+.chess-academy-title {
+    @include reset;
+    @include centre;
+
+    & hr {
+        display: inline-block;
+    }
+
+    & h2 {
+        @include reset;
+        margin-bottom: 11px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 34px;
+    }
+
+    & p {
+        @include reset;
+        max-width: 979px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+.course-title {
+    margin: 86px 0 11px 0 !important;
+}
+
+.enroll {
+    margin-bottom: 71px;
+}
+
+.our-teachers-container {
+    width: 100%;
+    background: url(img/full-points.png) 0 0 repeat, #00093C;
+    background-size: contain;
+    overflow: hidden;
+    margin-bottom: 61px;
+
+}
+
+.our-teachers {
+    padding-top: 62px;
+    @include centre;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 91px;
+
+}
+
+.teachers-title {
+    @include reset;
+    display: block;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.teachers-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.teachers-card {
+    text-align: center;
+    width: 280px;
+    height: 360px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    color: #000;
+    transition: .6s ease;
+
+    &:hover {
+        transform: scale(1.3)
+    }
+}
+
+.teacher {
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.teachers-name {
+    @include reset;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.teachers-description {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4F4F4F;
+}
+
+.registration {
+    margin: 204px auto 100px auto;
+    max-width: 580px;
+    text-align: center;
+}
+
+.registration-title {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    & hr {
+        width: 100%;
+    }
+}
+
+.sign-up {
+    width: 280px;
+}
+
+.sign-in {
+    width: 280px;
+}
+
+.registration-input {
+    display: block;
+    margin: 0 auto;
+    width: 361px;
+    background: #DDDFE6;
+    border-radius: 6px;
+    height: 50px;
+    font-size: 14px;
+    border: none;
+    padding-left: 19px;
+
+}
+
+.registration-input1 {
+    margin: 49.5px auto 20px auto;
+}
+
+.registration-input2 {
+    margin-bottom: 20px;
+}
+
+.registration-input3 {
+    margin-bottom: 36px;
+}
+
+.registration-icons {
+    width: 192px;
+    margin: 19px auto 32px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reg-btn {
+    background: #F7941D;
+    border-radius: 6px;
+    width: 180px;
+    height: 50px;
+    border: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    cursor: pointer;
 }

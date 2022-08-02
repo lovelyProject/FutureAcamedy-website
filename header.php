@@ -42,6 +42,6 @@
                     <path d="M1 1L5 5L9 1" stroke="#00093C" stroke-width="2" stroke-linecap="round" />
                 </svg></a>
             <li class="navbar-item"><a href="tel:8 800 950-33-98" id="number">8 800 950-33-98 </a></li>
-            <li class="navbar-item join"><a href="">Войти</a></li>
+            <li class="navbar-item join"><a href="registration.php">Войти</a></li>
         </ul>
     </header> 

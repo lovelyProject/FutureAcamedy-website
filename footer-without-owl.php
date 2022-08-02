@@ -1,35 +1,4 @@
 
-<div class="position">
-
-<form action="№" method="get" class="form">
-    <div class="user-name">
-        <input tabindex="1" placeholder="Ваше имя" type="text" name="username" class="username">
-    </div>
-    <div class="user-info">
-        <div class="phone-block" >
-            <input type="text" tabindex="2" placeholder="Ваш телефон" class="user-phone">
-            <p>Нажимая на кнопку, я соглашаюсь 
-на обработку персональных данных 
-и с правилами пользования Платформой</p>
-        </div>
-        <div class="mail-block">
-            <input type="text" placeholder="Ваш e-mail" tabindex="3" class="user-mail">
-            <div class="send"><button class="send-btn">Отправить</button></div>
-        </div>
-    </div>
-</form>
-<div class="owl-svg">
-<img src="img/big-owl.svg" alt="" class="big-owl">
-<img src="img/big-cloud.svg" alt="" class="big-cloud">
-<div class="cloud-question">
-<h2>Помочь с выбором?
-</h2>
-<p>
-Оставьте заявку и наши специалисты свяжутся с вами, ответят на все вопросы 
-и подберут подходящий вариант обучения.</p>
-</div>
-</div>
-</div>
 <footer class="footer">
    <div class="footer-container">
     <div class="requisites">

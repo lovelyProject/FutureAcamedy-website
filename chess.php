@@ -81,9 +81,11 @@
         </div>
 
     </div>
+    <!--
     <div class="chess-video-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ipfc4Xq9KUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="chess-video-item"></iframe>
     </div>
+-->
     <div class="chess-description-container">
         <div>
             <h2>Школа шахмат</h2>
@@ -106,6 +108,90 @@
                     игры с GM</span></div>
         </div>
     </div>
+    <div class="chess-bg-container">
+        <div class="chess-bg-items">
+            <div class="chess-bg-item">
+                <p class="chees-bg-text">Шахматы могут помочь вам планировать наперед,
+                    не торопиться с решениями и взвешивать их
+                    плюсы и минусы.</p>
+                <p class="chees-bg-text">Шахматами можно наслаждаться в любом
+                    возрасте — в результате, тренировка мозга может
+                    укреплять ваше здоровье.
+                </p>
+            </div>
+            <div class="chess-btn-container">
+                <button class="chess-bg-btn">Записаться на курс</button>
+            </div>
+        </div>
+    </div>
+    <div class="chess-underbg"></div>
+    <div class="chess-academy-title">
+        <h2>Chess academy
+            для школьников</h2>
+        <p>Обеспечиваем индивидуальный подход
+            к учащимся. В основе процесса обучения —
+            тесное
+            и открытое взаимодействие
+            педагода и ученика. Обучение проходит
+            по программе, созданной GM.</p>
+        <!--        Необходимо допилить слайдер
+       <div class="slider"></div>-->
+        <h2 class="course-title">Содержание курса</h2>
+        <p>Программа включает в себя изучение истории возникновения игры в шахматы, современные тенденции игры в онлайн-шахматы, знакомство со знаменитыми шахматистами прошлого
+            и настоящего. Дети знакомятся с фигурами и правилами игры, узнают основные понятия,
+            отрабатывая все в игровой практике. Дебют, мителльшпиль, эндшпиль, стратегия и тактика игры, особенности позиции – все это включено в первый год обучения, а пятилетний курс предполагает обучение ребенка до уровня КМС.</p>
+        <div class="chess-main-time">
+            <span class="chess-time-item">
+
+                <hr> <br>Срок обучения: <br>
+                5 лет
+            </span>
+
+            <span>
+                <hr> <br>Режим занятий: <br>
+                2 раза в неделю по 2 академических часа
+            </span>
+        </div>
+        <span class="price"><hr> <br> от 4 350 ₽ в месяц</span>
+        <a href="#" class="course-link"><button class="enroll-in-course enroll">Записаться на курс</button></a>
+    </div>
+    <div class="our-teachers-container">
+        <div class="our-teachers">
+            <h2 class="teachers-title">Наши преподаватели</h2>
+            <div class="teachers-cards">
+                <div class="teachers-card">
+                    <img src="img/teacher1.png" alt="" class="teacher1 teacher">
+                    <h2 class="teachers-name">Фамилия имя</h2>
+                    <p class="teachers-description">Выпускница Гарвардского Университета.
+                        Более 10 лет играет в шахматы
+                        и участвует в турнирах.</p>
+                </div>
+                <div class="teachers-card">
+                    <img src="img/teacher2.png" alt="" class="teacher2 teacher">
+                    <h2 class="teachers-name">Фамилия имя</h2>
+                    <p class="teachers-description">Выпускница Гарвардского Университета.
+                        Более 10 лет играет в шахматы
+                        и участвует в турнирах.</p>
+                </div>
+                <div class="teachers-card">
+                    <img src="img/teacher3.png" alt="" class="teacher3 teacher">
+                    <h2 class="teachers-name">Фамилия имя</h2>
+                    <p class="teachers-description">Выпускница Гарвардского Университета.
+                        Более 10 лет играет в шахматы
+                        и участвует в турнирах.</p>
+                </div>
+                <div class="teachers-card">
+                    <img src="img/teacher4.png" alt="" class="teacher4 teacher">
+                    <h2 class="teachers-name">Фамилия имя</h2>
+                    <p class="teachers-description">Выпускница Гарвардского Университета.
+                        Более 10 лет играет в шахматы
+                        и участвует в турнирах.</p>
+                </div>
+            </div>
+        </div>
+<!--блок с FAQ допилить-->
+    </div>
+    <?php include('footer.php'); ?>
 </body>
 
 </html>

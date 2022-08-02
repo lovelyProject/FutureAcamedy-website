@@ -22,7 +22,7 @@
                 <img src="img/white-arrow.svg" alt="" id="white-arrow">
              </a>
          <li class="navbar-item"><a href="tel:8 800 950-33-98" id="number">8 800 950-33-98 </a></li>
-         <li class="navbar-item join"><a href="">Войти</a></li>
+         <li class="navbar-item join"><a href="registration.php">Войти</a></li>
      </ul>
      </div>
  </header>
