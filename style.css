@@ -377,9 +377,17 @@ body {
   background-color: #FFE38E;
   border-radius: 20px;
   padding: 58px 0 58px 50px;
-  max-width: 680px; }
+  max-width: 680px;
+  transition: 0.4s ease; }
   .bottom img {
     margin-right: 60px; }
+
+.try-link {
+  transition: 0.4s ease;
+  text-decoration: none;
+  color: #000; }
+  .try-link :hover {
+    background-color: #fff; }
 
 .bottom-title {
   font-weight: 500;

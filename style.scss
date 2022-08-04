@@ -498,17 +498,29 @@ body {
     border-radius: 20px;
     padding: 58px 0 58px 50px;
     max-width: 680px;
+    transition: 0.4s ease;
+   
+    
 
     & img {
         margin-right: 60px;
     }
 }
-
+.try-link{
+    transition: 0.4s ease;
+    text-decoration: none;
+    color: #000;
+    & :hover{
+        background-color: #fff;
+    }
+}
 .bottom-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
+    
+    
 }
 
 .bottom-text {
@@ -1161,6 +1173,7 @@ owl-svg {
     border-radius: 20px;
 
 }
+
 
 .chess-description-container {
     max-width: 1180px;
