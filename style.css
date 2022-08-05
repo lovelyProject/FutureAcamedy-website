@@ -1469,20 +1469,91 @@ owl-svg {
     padding-top: 0;
     overflow: hidden; }
 
-  .big-owl {
-    width: 95px;
-    top: -78px;
-    right: 466px; }
+  .owl-svg {
+    display: none; } }
+@media (max-width: 424px) and (min-width: 375px) {
+  .header-blue-container {
+    max-width: 375px;
+    overflow: hidden; }
 
-  .big-cloud {
-    width: 214px;
-    top: -86px;
-    left: 294px; }
+  #white-pin, #white-arrow {
+    display: none; }
 
-  .cloud-question {
-    font-size: 9px;
-    width: 191px;
-    top: -84px;
-    left: 321px; } }
+  .navbar-item {
+    display: none; }
+
+  .all-courses-title {
+    font-size: 14px;
+    width: 375px;
+    margin: 21px auto 26px auto; }
+
+  .radio-filters {
+    display: none; }
+
+  .filters {
+    max-width: 375px; }
+
+  .filters-item img {
+    width: 25px; }
+  .filters-item span {
+    font-size: 10px; }
+
+  .all-courses-hr {
+    width: 70%; }
+
+  .all-program {
+    max-width: 375px; }
+
+  .cards-item {
+    width: 355px;
+    border-radius: 20px; }
+
+  .position {
+    width: 100%;
+    margin-top: 40px; }
+
+  .form {
+    padding: 0;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: none; }
+    .form .user-info {
+      display: block; }
+
+  .phone-block {
+    width: 100%;
+    margin-bottom: 20px; }
+    .phone-block p {
+      display: none; }
+
+  .phone-block input {
+    width: 281px; }
+
+  .user-name {
+    width: 300px; }
+    .user-name .username {
+      width: 281px; }
+
+  .mail-block {
+    width: 100%;
+    margin-left: 0; }
+    .mail-block input {
+      width: 281px; }
+
+  .footer-list {
+    display: none; }
+
+  .footer-container {
+    width: 100%; }
+
+  .requisites {
+    margin-top: 20px; }
+
+  .footer {
+    padding-top: 0;
+    overflow: hidden; }
+
+  .owl-svg {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
