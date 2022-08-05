@@ -712,7 +712,6 @@ owl-svg {
 
 .cards-item {
   width: 376px;
-  height: 184px;
   margin-bottom: 20px;
   background-color: #C7EEFF;
   border-radius: 20px;
@@ -1473,7 +1472,7 @@ owl-svg {
     display: none; } }
 @media (max-width: 424px) and (min-width: 375px) {
   .header-blue-container {
-    max-width: 375px;
+    max-width: 320px;
     overflow: hidden; }
 
   #white-pin, #white-arrow {
@@ -1484,7 +1483,7 @@ owl-svg {
 
   .all-courses-title {
     font-size: 14px;
-    width: 375px;
+    width: 320px;
     margin: 21px auto 26px auto; }
 
   .radio-filters {
@@ -1554,6 +1553,17 @@ owl-svg {
     overflow: hidden; }
 
   .owl-svg {
-    display: none; } }
+    display: none; }
+
+  .cards-item {
+    max-width: 305px;
+    padding: 19px 5px 18px 20px; }
+
+  .main-part {
+    margin: 0 auto;
+    width: 320px; }
+
+  .position {
+    margin-bottom: 39px; } }
 
 /*# sourceMappingURL=style.css.map */
