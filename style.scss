@@ -10,6 +10,11 @@
     padding: 0;
 }
 
+@mixin centre1024 {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 body {
     padding: 0;
     margin: auto;
@@ -21,6 +26,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
+
+    & li:hover {
+        opacity: 0.5;
+    }
 
 }
 
@@ -41,6 +50,10 @@ body {
 
     & .navbar a {
         color: #fff;
+    }
+
+    & li:hover {
+        opacity: 0.6;
     }
 }
 
@@ -82,7 +95,7 @@ body {
 }
 
 #city {
-    text-decoration: underline;
+    color: #000;
     margin-right: 10px;
 }
 
@@ -456,6 +469,12 @@ body {
     display: flex;
     margin-bottom: 20px;
 
+    & a {
+        text-decoration: none;
+        color: #000;
+    }
+
+
 
 }
 
@@ -499,28 +518,31 @@ body {
     padding: 58px 0 58px 50px;
     max-width: 680px;
     transition: 0.4s ease;
-   
-    
+
+
 
     & img {
         margin-right: 60px;
     }
 }
-.try-link{
+
+.try-link {
     transition: 0.4s ease;
     text-decoration: none;
     color: #000;
-    & :hover{
+
+    & :hover {
         background-color: #fff;
     }
 }
+
 .bottom-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
-    
-    
+
+
 }
 
 .bottom-text {
@@ -699,6 +721,7 @@ owl-svg {
     background-color: #00093C;
     padding: 70px 0 56px 0;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .requisites {
@@ -713,8 +736,13 @@ owl-svg {
     font-weight: 600;
     font-size: 18px;
     line-height: 26px;
-    color: #fff;
+
     margin-bottom: 12px;
+
+    & a {
+        text-decoration: none;
+        color: #fff;
+    }
 }
 
 .addres {
@@ -730,7 +758,11 @@ owl-svg {
     font-size: 14px;
     line-height: 26px;
     margin-bottom: 38px;
-    color: #fff;
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 .icons {
@@ -738,6 +770,7 @@ owl-svg {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .copyrights {
@@ -756,6 +789,9 @@ owl-svg {
         text-decoration: none;
     }
 
+    & li:hover {
+        color: #363636;
+    }
 }
 
 .footer-item {
@@ -887,7 +923,7 @@ owl-svg {
     }
 
     & a:hover {
-        border: 4px solid #363636;
+        opacity: 0.6;
     }
 
 }
@@ -923,9 +959,8 @@ owl-svg {
 }
 
 .cards-link:hover {
-    border: 6px solid rgba(39, 170, 225, 0.1);
-    border-radius: 20px;
-    transition: 0.2s;
+    transform: scale(1.2);
+    z-index: 1;
 }
 
 .main-cards {
@@ -950,6 +985,7 @@ owl-svg {
 
 .card-item-title {
     display: flex;
+    align-items: center;
 
     & h2 {
         @include reset;
@@ -1069,7 +1105,7 @@ owl-svg {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height:     26px;
+    line-height: 26px;
 
 
 }
@@ -1453,4 +1489,295 @@ owl-svg {
     font-size: 14px;
     line-height: 26px;
     cursor: pointer;
+}
+
+.events-main {
+    @include reset;
+    @include centre;
+}
+
+.events-nav {
+    margin: 19px auto 12px auto;
+
+    & a {
+        text-decoration: none;
+        color: #828282;
+    }
+
+    & img {
+        margin-right: 10px;
+    }
+}
+
+.mini-nav :not(last-child) {
+    margin-right: 8px;
+}
+
+.events-title {
+    @include reset;
+    margin-bottom: 40px;
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    display: block;
+    width: 320px;
+    padding: 27px 30px 38px 30px;
+    background-color: #C7EEFF;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    margin: 0 20px 20px 0;
+    transition: 1s ease;
+
+    & p {
+        color: #4F4F4F;
+    }
+
+}
+
+.event-card-long {
+    width: 780px;
+    padding: 0;
+    background-color: #B8EFCF;
+    display: flex;
+
+    & img {
+        margin-right: 23px;
+    }
+}
+
+.event-cards :last-child {
+    margin-right: 0px;
+}
+
+.long-card {
+    padding-top: 27px;
+
+    & span {
+        margin-bottom: 29px;
+    }
+
+    & h2 {
+        @include reset;
+        color: #00093C;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 27px;
+    }
+
+    & p {
+        @include reset;
+        margin-bottom: 17px;
+        max-width: 447px;
+    }
+}
+
+.event-card-guy {
+
+    background: url(img/event-guy.png) no-repeat;
+    opacity: 0.6;
+
+    background-size: cover;
+    padding-top: 66px;
+
+    & h2 {
+        color: #fff;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 29px;
+        margin-bottom: 35px;
+    }
+
+    & p {
+        @include reset;
+        color: #fff;
+
+    }
+}
+
+@media (max-width:1180px) and (min-width: 1025px) {
+    .header-blue-container {
+        justify-content: center;
+        max-width: 1024px;
+
+    }
+
+    .all-courses-hr {
+        max-width: 70%;
+    }
+
+    .all-courses-title {
+        max-width: 856px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #blue-city,
+    #city,
+    #white-pin,
+    #pin,
+    #white-arrow {
+        display: none;
+    }
+
+    .all-program {
+        width: 1024px;
+    }
+
+    .cards-item {
+        width: 600px;
+
+        & p {
+            max-width: none;
+        }
+    }
+
+    .user-info {
+        justify-content: flex-end;
+        max-width: none;
+    }
+
+    .user-name {
+        text-align: end;
+
+    }
+
+    .big-owl {
+        width: 210px;
+        left: 36px;
+    }
+
+    .big-cloud {
+        width: 276px;
+        left: 230px;
+    }
+
+    .cloud-question {
+        width: 213px;
+        font-size: 11px;
+        left: 280px;
+        top: 25px;
+    }
+
+    .form {
+        width: 934px;
+        margin: 15px auto 15px auto;
+        padding: 30px 40px 10px 0;
+    }
+
+    .position {
+        width: 100%;
+    }
+
+    .footer {
+        overflow: hidden;
+    }
+
+    .footer-title1 {
+        margin-right: 20px;
+        font-size: 10px;
+    }
+
+    .footer-container {
+        max-width: 1024px;
+
+    }
+
+    .footer-list li {
+        font-size: 12px;
+    }
+
+    .requisites {}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .header-blue-container {
+        justify-content: center;
+        max-width: 768px;
+    }
+
+    #blue-city,
+    #city,
+    #white-pin,
+    #pin,
+    #white-arrow,
+    #number {
+        display: none;
+    }
+
+    .all-courses-title {
+        max-width: 768px;
+    }
+
+    .all-courses-hr {
+        width: 80%;
+    }
+
+    .all-program {
+        max-width: 768px;
+    }
+
+    .radio-filters {
+        width: 195px;
+    }
+
+    .adv {
+        width: inherit;
+        height: 315px;
+    }
+
+    .cards-item {
+        width: 521px;
+
+        & p {
+            max-width: none;
+        }
+    }
+
+    .form,
+    .position {
+        width: 768px;
+
+    }
+
+    .cloud-question {
+        width: 150px;
+        font-size: 8px;
+        left: 128px;
+        top: 127px;
+    }
+
+
+.big-owl {
+    width: 150px;
+    top: 113px;
+    left: -43px;
+}
+
+.big-cloud {
+    width: 182px;
+    left: 105px;
+    top: 127px;
+}
+
+.form {
+    padding: 20px 15px;
+    width: 738px;
+}
+    .footer-container{
+        max-width: 768px;
+    }
+    .footer-item{
+        font-size: 10px;
+    }
+    .requisites{
+        margin-right: 42px;
+    }
 }
