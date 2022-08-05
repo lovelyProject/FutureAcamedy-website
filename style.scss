@@ -39,7 +39,9 @@ body {
     background-color: #00093C;
 
 }
-
+.burger{
+    display: none;
+}
 .header-blue-container {
     display: flex;
     justify-content: space-between;
@@ -218,6 +220,10 @@ body {
 .filters-item {
     display: flex;
     align-items: center;
+
+    & div:hover {
+        opacity: 0.6;
+    }
 }
 
 #children-svg {
@@ -1696,11 +1702,11 @@ owl-svg {
     .requisites {}
 }
 
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px) {
 
     .header-blue-container {
         justify-content: center;
-        max-width: 768px;
+        max-width: 776px;
     }
 
     #blue-city,
@@ -1755,29 +1761,154 @@ owl-svg {
     }
 
 
-.big-owl {
-    width: 150px;
-    top: 113px;
-    left: -43px;
-}
+    .big-owl {
+        width: 150px;
+        top: 113px;
+        left: -43px;
+    }
 
-.big-cloud {
-    width: 182px;
-    left: 105px;
-    top: 127px;
-}
+    .big-cloud {
+        width: 182px;
+        left: 105px;
+        top: 127px;
+    }
 
-.form {
-    padding: 20px 15px;
-    width: 738px;
-}
-    .footer-container{
+    .form {
+        padding: 20px 15px;
+        width: 738px;
+    }
+
+    .footer-container {
         max-width: 768px;
     }
-    .footer-item{
+
+    .footer-item {
         font-size: 10px;
     }
-    .requisites{
+
+    .requisites {
         margin-right: 42px;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+    
+    .header-blue-container{
+        max-width: 425px;
+        overflow: hidden;
+    }
+    #white-pin, #white-arrow{
+        display: none;
+    }
+    .navbar-item{
+        display: none;
+    }
+    .main-part {
+        width: 390px;
+       
+    }
+    .branch-nav a{
+         
+            font-size: 14px;
+            width: 106px;
+        margin-right: 10px;
+        
+    }
+    .cards-item {
+        max-width: 390px;
+    }
+    .all-courses-title{
+        font-size: 14px;
+        width: 425px;
+        margin: 21px auto 26px auto;
+    }
+    .filters{
+        max-width: 425px;
+    }
+    .filters-item{
+        & img{
+            width: 25px;
+        }
+        & span{
+            font-size: 10px;
+        }
+    }
+    .all-courses-hr{
+        width: 425px;
+    }
+    .radio-filters{
+        display: none;
+    }
+    .all-program{
+        width: 425px;
+    }
+    .cards-item{
+        width: 355px;
+        border-radius: 20px;
+    }
+    .position{
+        width: 100%;
+        margin-top: 90px;
+    }
+    .form{
+        width:300px;
+            margin: 0 auto;
+        box-shadow: none;
+        & .user-info{
+            display: block;
+        }
+
+    }
+    .phone-block{
+        width: 100%;
+        margin-bottom: 20px;
+        & p{
+            display: none;
+        }
+    }
+    .phone-block input {
+        width: 281px;
+    }
+    .user-name{
+        width: 300px;
+        & .username{
+            width: 281px;
+        }
+        
+    }
+    .mail-block{
+        width: 100%;
+        margin-left: 0;
+        & input{
+            width: 281px;
+        }
+    }
+    .footer-list{
+        display: none;
+    }
+    .footer-container{
+        width: 100%;    
+    }
+    .requisites {
+        margin-top: 20px;}
+    .footer{
+        padding-top: 0;
+        overflow: hidden;
+    }
+    .big-owl{
+        width: 95px;
+        top: -78px;
+    right: 466px;
+    }
+    .big-cloud{
+        width: 214px;
+    top: -86px;
+    left: 294px;
+    }
+    .cloud-question{
+            font-size: 9px;
+    width: 191px;
+    top: -84px;
+    left: 321px;
     }
 }
