@@ -1244,6 +1244,9 @@ owl-svg {
     padding: 0;
     color: #fff; }
 
+@media (max-width: 1900px) and (min-width: 1481px) {
+  .main {
+    background: url(img/slider.png) 1100px 0 no-repeat, #00093C url(img/points.png) 9px 0 repeat; } }
 @media (max-width: 1480px) and (min-width: 1181px) {
   .main {
     background: url(img/slider.png) 787px 0 no-repeat, #00093C url(img/points.png) -234px 17px repeat; } }
