@@ -1618,13 +1618,13 @@ owl-svg {
 
     }
 }
-.burger-menu-nav{
+.burger-menu{
 	display: none;
 }
 .burger-btn{
 	width: 40px;
 	height: 40px;
-	
+	z-index: 30;
 	
 	position: relative;
 }
@@ -1664,6 +1664,34 @@ margin-right: -10px;
 }
 #navbar-item-courses{
 	margin: 0;
+}
+.burger-menu-nav{
+	display: flex;
+	padding-top: 40px;
+	position: fixed;
+	z-index: 20;
+	font-display: flex;
+	flex-flow: column;
+	height: 100%;
+	background-color: #2a2a2a;
+	overflow-y: auto;
+	right: -100%; 
+}
+.burger-menu-link{
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	&:hover{
+		filter: brightness(0.7);
+	}
+}
+
+.burger-active .burger-menu-nav{
+	right: 0;
 }
 @media (max-width:1900px) and (min-width:1481px){
     .main{
@@ -2042,7 +2070,7 @@ margin-right: -10px;
 
 @media (max-width: 768px) and (min-width: 425px) {
 
-	.burger-menu-nav{
+	.burger-menu{
 		display: inherit;
 	}
     .header,
@@ -2318,7 +2346,7 @@ margin-right: -10px;
 
 @media (max-width: 424px) and (min-width:375px) {
 
-    .burger-menu-nav{
+    .burger-menu{
 		display: inherit;
 	}
  .owl-svg {
@@ -2615,7 +2643,7 @@ margin-right: -10px;
 
 @media (max-width: 374px) {
     // Все курсы
-	.burger-menu-nav{
+	.burger-menu{
 		display: inherit;
 	}
     .header-blue-container {
