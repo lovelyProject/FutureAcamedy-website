@@ -1618,12 +1618,58 @@ owl-svg {
 
     }
 }
-
-
+.burger-menu-nav{
+	display: none;
+}
+.burger-btn{
+	width: 40px;
+	height: 40px;
+	
+	
+	position: relative;
+}
+.burger-span::before,
+.burger-span::after,
+.burger-span{
+	width: 20px;
+	height: 2px;
+	background-color: #000;
+	position: absolute;
+	top: 50%;
+	right: 50%;
+margin-right: -10px;
+	margin-top: -1px;
+	transition: .6s ease;
+	
+}
+.burger-span:before,
+.burger-span::after{
+	content: '';
+}
+.burger-span:before{
+	
+	transform:  translateY(5px)
+}
+.burger-span:after{
+	transform:  translateY(-5px)
+}
+.burger-active .burger-span:before{
+	transform: rotate(45deg)
+}
+.burger-active .burger-span:after{
+	transform: rotate(-45deg)
+}
+.burger-active .burger-span{
+	background-color: transparent;
+}
+#navbar-item-courses{
+	margin: 0;
+}
 @media (max-width:1900px) and (min-width:1481px){
     .main{
         background:  url(img/slider.png) 1100px 0 no-repeat, #00093C url(img/points.png) 9px 0 repeat;}
 }
+
 @media (max-width:1480px) and (min-width:1181px) {
     .main {
         background: url(img/slider.png) 787px 0 no-repeat, #00093C url(img/points.png) -234px 17px repeat;
@@ -1779,7 +1825,6 @@ owl-svg {
     }
 
 }
-
 
 @media (max-width: 1024px) and (min-width: 769px) {
 
@@ -1997,7 +2042,9 @@ owl-svg {
 
 @media (max-width: 768px) and (min-width: 425px) {
 
-
+	.burger-menu-nav{
+		display: inherit;
+	}
     .header,
     .header-blue-container {
         max-width: 425px;
@@ -2271,7 +2318,9 @@ owl-svg {
 
 @media (max-width: 424px) and (min-width:375px) {
 
-    
+    .burger-menu-nav{
+		display: inherit;
+	}
  .owl-svg {
         display: none;
     }
@@ -2566,6 +2615,9 @@ owl-svg {
 
 @media (max-width: 374px) {
     // Все курсы
+	.burger-menu-nav{
+		display: inherit;
+	}
     .header-blue-container {
 
         max-width: 290px;
