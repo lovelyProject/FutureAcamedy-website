@@ -382,7 +382,16 @@ body {
 
 
 }
-
+.events-main-info{
+	max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: #F7BC75;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .register {
     display: inline-block;
     border: 2px solid #000;
@@ -667,7 +676,9 @@ body {
     border: none;
 
 }
-
+.registration-icons{
+	align-items: center;
+}
 .send-btn {
     margin-top: 20px;
     background: #F7941D;
@@ -1543,7 +1554,7 @@ owl-svg {
 
 .event-cards {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .event-card {
@@ -1701,6 +1712,7 @@ margin-right: -10px;
 .burger-active .burger-menu-nav{
 	right: 0;
 }
+
 @media (max-width:1900px) and (min-width:1481px){
     .main{
         background:  url(img/slider.png) 1100px 0 no-repeat, #00093C url(img/points.png) 9px 0 repeat;}
@@ -1809,7 +1821,7 @@ margin-right: -10px;
     // Главная
     .header {
         max-width: 1024px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     .nav-bar-item {
@@ -1859,16 +1871,30 @@ margin-right: -10px;
     .main {
         background: url("img/slider.png") 708px 0 no-repeat, #00093C url("img/points.png") -234px 17px repeat;
     }
+	//Все мероприятия
+	.event-card{
+		width: 26%;
+	}
+	.event-card-long{
+		width: 66% ;
+	}
+	.events-main,
+	.events-cards,{
+		    max-width: 1024px;
+    margin: 0 auto;
+	}    
 
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
 
     //Все курсы
-	
+	.branch-nav a {
+		padding: 19px 7px;
+	}
     .header,
     .header-blue-container {
-        justify-content: center;
+        justify-content: space-between;
         max-width: 768px;
     }
 
@@ -2094,6 +2120,19 @@ margin-bottom: 10px;
 	.char-text{
 		font-size: 15px;
     max-width: 165px;
+	}
+	.cards-item {
+		width: 510px;
+	}
+	//Мероприятия
+	.events-main,
+	.events-cards,{
+		    max-width: 768px;
+    margin: 0 auto;
+	}   
+	.event-cards{flex-wrap: nowrap;}
+	.event-card-long img{
+		object-fit: cover;
 	}
 }
 
@@ -2372,6 +2411,34 @@ margin-bottom: 10px;
             margin-left: 10px;
         margin-bottom: 19px;
     }
+	//Мероприятия
+	.events-main,
+	.events-cards,{
+		    max-width: 425px;
+    margin: 0 auto;
+	}   
+	.event-cards{flex-wrap: nowrap;}
+	.event-card-long img{
+		object-fit: cover;
+		display: none;
+	}
+		.event-cards,
+	.events-main-info{
+		display: block;
+	}
+	.event-card{
+	width: 365px;
+		margin-right: 0;
+	}
+	.card-item-title{
+		margin-bottom: 20px;
+	}
+	.event-card p{
+		margin-bottom: 10px;
+	}
+	.event-card-long{
+		padding: 27px 30px 38px 30px;
+	}
 }
 
 @media (max-width: 424px) and (min-width:375px) {
@@ -2520,9 +2587,8 @@ margin-bottom: 10px;
     }
     //Главная 
     
-    .header {
-        max-width: 375px;
-    }
+    
+    
 
     .main {
         
@@ -2668,6 +2734,34 @@ margin-bottom: 10px;
     .hr-undersort{
         max-width: 325px;
     }
+	//Мероприятия
+	.events-main,
+	.events-cards,{
+		    max-width: 375px;
+    margin: 0 auto;
+	}   
+	.event-cards{flex-wrap: nowrap;}
+	.event-card-long img{
+		object-fit: cover;
+		display: none;
+	}
+		.event-cards,
+	.events-main-info{
+		display: block;
+	}
+	.event-card{
+	width: 315px;
+		margin-right: 0;
+	}
+	.card-item-title{
+		margin-bottom: 20px;
+	}
+	.event-card p{
+		margin-bottom: 10px;
+	}
+	.event-card-long{
+		padding: 27px 30px 38px 30px;
+	}
 
 }
 
@@ -2970,5 +3064,33 @@ margin-bottom: 10px;
 	.subjects-item {
 		padding: 10px 3px;
 		    margin: 0 auto 10px auto;
+	}
+	//Мероприятия
+	.events-main,
+	.events-cards,{
+		    max-width: 320px;
+    margin: 0 auto;
+	}   
+	.event-cards{flex-wrap: nowrap;}
+	.event-card-long img{
+		object-fit: cover;
+		display: none;
+	}
+		.event-cards,
+	.events-main-info{
+		display: block;
+	}
+	.event-card{
+	max-width: 260px;
+		margin-right: 0;
+	}
+	.card-item-title{
+		margin-bottom: 20px;
+	}
+	.event-card p{
+		margin-bottom: 10px;
+	}
+	.event-card-long{
+		padding: 27px 30px 38px 30px;
 	}
 }
