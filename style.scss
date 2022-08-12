@@ -731,7 +731,12 @@ owl-svg {
     width: 352.8px;
     z-index: 2;
     left: 320px;
-    top: 30px;
+    top: 65px;
+	& h2{
+		margin-bottom: 20px;
+    font-weight: bold;
+		font-size: 20px;
+	}
 }
 
 .footer {
@@ -1860,7 +1865,7 @@ margin-right: -10px;
 @media (max-width: 1024px) and (min-width: 769px) {
 
     //Все курсы
-
+	
     .header,
     .header-blue-container {
         justify-content: center;
@@ -2069,6 +2074,27 @@ margin-right: -10px;
     .navbar-item {
         margin-right: 17px;
     }
+	.cloud-question{
+		width: 150px;
+    font-size: 8px;
+    left: 128px;
+    top: 140px;
+		& h2{
+margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+		}
+	}
+	.hr-undersort {
+		width: 768px;
+	}
+	.footer-title1{
+		margin-right: 20px;
+	}	
+	.char-text{
+		font-size: 15px;
+    max-width: 165px;
+	}
 }
 
 @media (max-width: 768px) and (min-width: 425px) {
