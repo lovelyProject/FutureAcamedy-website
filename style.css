@@ -788,14 +788,16 @@ owl-svg {
 .chess-main {
   background-color: #00093C;
   color: #fff;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
 
 .chess-main-container {
-  max-width: 1180px;
   width: 1180px;
   margin: 0 auto;
+  max-width: 1180px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  overflow: hidden; }
 
 .chess-main-description {
   padding: 39px 0 30px 0; }
@@ -873,21 +875,20 @@ owl-svg {
   width: 1180px;
   margin: 0 auto;
   width: 1180px;
-  position: absolute;
-  display: inline; }
-
-.hourse-svg {
-  position: relative; }
+  position: relative;
+  display: inline;
+  background: #00093C url(img/chess-main.png) 0 -77px no-repeat;
+  background-size: cover; }
 
 .hourse-svg1 {
-  position: relative;
-  bottom: 456px;
-  left: 481px; }
+  position: absolute;
+  bottom: 436px;
+  left: -89px; }
 
 .circle-svg {
-  position: relative;
-  top: -288px;
-  left: 487px;
+  position: absolute;
+  top: 200px;
+  left: -51px;
   z-index: 1; }
 
 .chess-aim-container {
@@ -1106,6 +1107,7 @@ owl-svg {
   display: block; }
 
 .teachers-description {
+  padding-bottom: 40px;
   max-width: 240px;
   display: block;
   margin: 0 auto;
@@ -1339,6 +1341,49 @@ owl-svg {
   .main {
     background: url(img/slider.png) 787px 0 no-repeat, #00093C url(img/points.png) -234px 17px repeat; } }
 @media (max-width: 1180px) and (min-width: 1025px) {
+  .cloud-question {
+    width: 213px;
+    left: 269px;
+    top: 34px; }
+    .cloud-question h2 {
+      font-size: 19px; }
+    .cloud-question p {
+      font-size: 12px; }
+
+  .chess-main-container {
+    max-width: 1024px; }
+
+  .chess-svg-container {
+    background: #00093C url(img/chess-main.png) 0 0 no-repeat;
+    background-size: cover; }
+
+  .chess-aim-container {
+    max-width: 1024px; }
+
+  .chess-figures h2 {
+    font-size: 20px; }
+
+  .chess-description-container {
+    max-width: 1024px; }
+
+  .chess-bg-items {
+    max-width: 1024px; }
+
+  .chess-academy-title {
+    max-width: 1024px; }
+
+  .our-teachers {
+    max-width: 1024px; }
+
+  .teachers-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .teachers-card {
+    height: auto;
+    margin-bottom: 20px;
+    width: 360px; }
+
   .header-blue-container {
     justify-content: center;
     max-width: 1024px; }
@@ -1380,12 +1425,6 @@ owl-svg {
   .big-cloud {
     width: 276px;
     left: 230px; }
-
-  .cloud-question {
-    width: 213px;
-    font-size: 11px;
-    left: 280px;
-    top: 25px; }
 
   .form {
     width: 934px;
@@ -1459,6 +1498,55 @@ owl-svg {
     max-width: 1024px;
     margin: 0 auto; } }
 @media (max-width: 1024px) and (min-width: 769px) {
+  .cloud-question {
+    width: 213px;
+    left: 269px;
+    top: 34px; }
+    .cloud-question h2 {
+      font-size: 19px; }
+    .cloud-question p {
+      font-size: 12px; }
+
+  .chess-main-container {
+    max-width: 768px; }
+
+  .chess-svg-container {
+    background: #00093C; }
+
+  .chess-figures h2 {
+    font-size: 20px; }
+
+  .chess-description-container {
+    max-width: 768px; }
+
+  .chess-bg-items {
+    max-width: 768px; }
+
+  .chess-academy-title {
+    max-width: 768px; }
+
+  .our-teachers {
+    max-width: 768px; }
+
+  .teachers-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .teachers-card {
+    height: auto;
+    margin-bottom: 20px;
+    width: 360px; }
+
+  .chess-svg-container {
+    display: none; }
+
+  .chess-video-container {
+    max-width: 768px; }
+
+  .chess-aim-container {
+    display: block;
+    max-width: 768px; }
+
   .branch-nav a {
     padding: 19px 7px; }
 
@@ -1500,21 +1588,15 @@ owl-svg {
   .position {
     width: 768px; }
 
-  .cloud-question {
-    width: 150px;
-    font-size: 8px;
-    left: 128px;
-    top: 127px; }
-
   .big-owl {
     width: 150px;
-    top: 113px;
-    left: -43px; }
+    top: 88px;
+    left: -97px; }
 
   .big-cloud {
-    width: 182px;
-    left: 105px;
-    top: 127px; }
+    width: 245px;
+    left: 51px;
+    top: 67px; }
 
   .form {
     padding: 20px 15px;
@@ -1618,10 +1700,10 @@ owl-svg {
     margin-right: 17px; }
 
   .cloud-question {
-    width: 150px;
+    width: 212px;
     font-size: 8px;
-    left: 128px;
-    top: 140px; }
+    left: 84px;
+    top: 82px; }
     .cloud-question h2 {
       margin-bottom: 10px;
       font-weight: bold;
@@ -1651,6 +1733,72 @@ owl-svg {
   .event-card-long img {
     object-fit: cover; } }
 @media (max-width: 768px) and (min-width: 425px) {
+  .cloud-question {
+    width: 213px;
+    left: 269px;
+    top: 34px; }
+    .cloud-question h2 {
+      font-size: 19px; }
+    .cloud-question p {
+      font-size: 12px; }
+
+  .chess-main-container {
+    max-width: 425px; }
+
+  .chess-svg-container {
+    background: #00093C; }
+
+  .chess-figures h2 {
+    font-size: 20px; }
+
+  .chess-description-container {
+    max-width: 425px; }
+
+  .chess-bg-items {
+    max-width: 425px; }
+
+  .chess-academy-title {
+    max-width: 425px; }
+
+  .our-teachers {
+    max-width: 425px; }
+
+  .teachers-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .teachers-card {
+    height: auto;
+    margin-bottom: 20px;
+    width: 360px; }
+
+  .chess-svg-container {
+    display: none; }
+
+  .chess-video-container {
+    max-width: 425px; }
+
+  .chess-aim-container {
+    display: block;
+    max-width: 425px; }
+
+  .chess-aims {
+    flex-wrap: wrap; }
+
+  .chess-icons {
+    flex-wrap: wrap; }
+
+  .chess-ico {
+    margin-bottom: 20px; }
+
+  .chess-bg-item {
+    margin-bottom: 0; }
+
+  .chess-bg-item p {
+    max-width: 200px;
+    font-size: 16px;
+    margin-top: 55px; }
+
   .burger-menu {
     display: inherit; }
 
@@ -1883,6 +2031,77 @@ owl-svg {
   .event-card-long {
     padding: 27px 30px 38px 30px; } }
 @media (max-width: 424px) and (min-width: 375px) {
+  .cloud-question {
+    width: 213px;
+    left: 269px;
+    top: 34px; }
+    .cloud-question h2 {
+      font-size: 19px; }
+    .cloud-question p {
+      font-size: 12px; }
+
+  .chess-main-container {
+    max-width: 375px; }
+
+  .chess-svg-container {
+    background: #00093C; }
+
+  .chess-figures h2 {
+    font-size: 20px; }
+
+  .chess-description-container {
+    max-width: 375px; }
+
+  .chess-bg-items {
+    max-width: 375px; }
+
+  .chess-figures {
+    margin: 0px 10px 0px 0;
+    max-width: 175px; }
+
+  .chess-academy-title {
+    max-width: 375px; }
+
+  .our-teachers {
+    max-width: 375px; }
+
+  .teachers-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .teachers-card {
+    height: auto;
+    margin-bottom: 20px;
+    width: 360px; }
+
+  .chess-svg-container {
+    display: none; }
+
+  .chess-video-container {
+    max-width: 375px; }
+
+  .chess-aim-container {
+    display: block;
+    max-width: 375px; }
+
+  .chess-aims {
+    flex-wrap: wrap; }
+
+  .chess-icons {
+    flex-wrap: wrap; }
+
+  .chess-ico {
+    margin-bottom: 20px; }
+
+  .chess-bg-item {
+    margin-bottom: 0; }
+
+  .chess-bg-item p {
+    max-width: 160px;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
   .burger-menu {
     display: inherit; }
 
@@ -2132,6 +2351,90 @@ owl-svg {
   .event-card-long {
     padding: 27px 30px 38px 30px; } }
 @media (max-width: 374px) {
+  .cloud-question {
+    width: 213px;
+    left: 269px;
+    top: 34px; }
+    .cloud-question h2 {
+      font-size: 19px; }
+    .cloud-question p {
+      font-size: 12px; }
+
+  .chess-main-container {
+    max-width: 320px; }
+
+  .chess-svg-container {
+    background: #00093C; }
+
+  .chess-figures h2 {
+    font-size: 20px; }
+
+  .chess-description-container {
+    max-width: 320px; }
+
+  .chess-bg-items {
+    max-width: 320px; }
+
+  .chess-figures {
+    margin: 0px 10px 0px 0;
+    max-width: 175px; }
+
+  .chess-academy-title {
+    max-width: 320px; }
+
+  .our-teachers {
+    max-width: 320px; }
+
+  .teachers-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+
+  .teachers-card {
+    height: auto;
+    margin-bottom: 20px;
+    width: 300px; }
+
+  .chess-svg-container {
+    display: none; }
+
+  .chess-video-container {
+    max-width: 320px; }
+
+  .chess-owl {
+    max-width: 290px; }
+
+  .chess-owl-span {
+    position: relative;
+    display: inline-block;
+    bottom: 283px;
+    right: -18px;
+    font-size: 13px; }
+
+  .chess-cloud {
+    width: 280px; }
+
+  .chess-aim-container {
+    display: block;
+    max-width: 320px; }
+
+  .chess-aims {
+    flex-wrap: wrap; }
+
+  .chess-icons {
+    flex-wrap: wrap; }
+
+  .chess-ico {
+    margin-bottom: 20px; }
+
+  .chess-bg-item {
+    margin-bottom: 0; }
+
+  .chess-bg-item p {
+    max-width: 160px;
+    font-size: 13px;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+
   .burger-menu {
     display: inherit; }
 
@@ -2251,7 +2554,7 @@ owl-svg {
     padding: 34px 0; }
 
   .header {
-    max-width: 325px; }
+    max-width: 320px; }
 
   .main {
     background: #00093C url();
