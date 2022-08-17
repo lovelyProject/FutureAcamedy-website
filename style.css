@@ -249,7 +249,7 @@ body {
   justify-content: space-between; }
 
 .statistic-title {
-  color: #fff;
+  color: #E5E5E5;
   font-weight: 700;
   font-size: 86px;
   line-height: 105px;
@@ -479,7 +479,14 @@ body {
     padding: 16px 0 16px 19px; }
   .phone-block p {
     width: 210px;
-    font-size: 11px; }
+    font-size: 11px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    text-align: start;
+    margin-top: 20px; }
 
 .mail-block {
   width: 210px;
@@ -1334,6 +1341,291 @@ owl-svg {
 .burger-active .burger-menu-nav {
   right: 0; }
 
+.bgc {
+  background-color: #E5E5E5; }
+
+.career {
+  width: 100%;
+  background-color: #00093C;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 117px; }
+
+.career-container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex; }
+
+.career-title {
+  padding-top: 123px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 51px;
+  color: #fff; }
+
+.career-description {
+  display: block;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 140px; }
+
+.career-link {
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 13px 14px;
+  background-color: #F7941D;
+  width: 286px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  z-index: 1; }
+
+.career-main-svg {
+  position: relative; }
+
+.main-x {
+  position: absolute;
+  top: 33px;
+  left: 133px; }
+
+.main-o {
+  position: absolute;
+  top: 226px; }
+
+.main-d {
+  position: absolute;
+  top: 226px;
+  left: 236px; }
+
+.main-d {
+  position: absolute; }
+
+.circle-career {
+  width: 80px;
+  position: absolute;
+  top: 90px;
+  left: 20px; }
+
+.cross-career {
+  position: absolute;
+  width: 130px;
+  top: 73px;
+  right: 683px; }
+
+.cross-career-small {
+  position: absolute;
+  width: 68px;
+  left: 400px;
+  top: 180px; }
+
+.diagram-career {
+  position: absolute;
+  top: 245px;
+  right: 453px; }
+
+.rectangle-career {
+  position: absolute;
+  top: 300px;
+  right: 86px; }
+
+.career-container-aims {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.career-owl-text {
+  position: relative;
+  width: 222px;
+  margin-right: 222px; }
+
+.career-cloud {
+  position: absolute;
+  width: 350px; }
+
+.career-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  position: absolute;
+  width: 310px;
+  z-index: 1;
+  top: 30px;
+  left: 40px; }
+
+.career-owl {
+  position: absolute;
+  width: 168px;
+  top: 76px;
+  left: -44px; }
+
+.career-aims {
+  margin-bottom: 122px; }
+
+.career-job-question {
+  max-width: 1180px;
+  margin: 0 auto 109px auto; }
+
+.career-job-question-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 34px;
+  color: #000;
+  margin-bottom: 12px; }
+
+.career-job-question-text {
+  margin-bottom: 37px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px; }
+
+.step-img {
+  width: 54px;
+  z-index: 1;
+  margin-bottom: 32px; }
+
+.career-container2 {
+  padding-top: 36px;
+  display: block;
+  text-align: center;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-bottom: 40px; }
+
+.aply-job-title {
+  display: block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin: 0 auto 46px auto; }
+
+.steps {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 59px; }
+
+.step-text {
+  width: 280px;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px; }
+
+.step {
+  position: relative; }
+
+.step-svg {
+  position: absolute;
+  top: 65px;
+  left: 112px; }
+
+.vacancies-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  margin-bottom: 20px; }
+
+.vacancies {
+  max-width: 1180px;
+  margin: 0 auto 100px auto; }
+
+.vacancies-cards {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 125px; }
+
+.vacancy-title {
+  margin-bottom: 9px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #00093C; }
+
+.vacancy-text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4F4F4F; }
+
+.vacancy-salary {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 34px;
+  color: #00093C; }
+
+.vacancy-link {
+  display: block;
+  width: 330px;
+  width: 330px;
+  padding: 32px 20px 33px 30px;
+  background-color: #C5DDFF;
+  border-radius: 20px;
+  text-decoration: none;
+  margin: 0  10px 10px 0; }
+
+.vacancy-link2 {
+  background-color: #B8EFCF; }
+
+.vacancy-link3 {
+  background-color: #FFCE94; }
+
+.vacancy-link4 {
+  background-color: #C7EEFF; }
+
+.vacancy-link5 {
+  background-color: #FFE38E; }
+
+.graduates-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  color: #000;
+  margin-bottom: 20px; }
+
+.graduates-cards {
+  display: flex;
+  flex-wrap: wrap; }
+
+.graduates-cards-item {
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 16px 16px 0;
+  box-shadow: 0px 0px 3px #FFFFFF;
+  display: flex;
+  justify-content: center; }
+
+.tinkoff {
+  padding: 20px 36px 22px 36px; }
+
+.aplha {
+  padding: 46px 30px 45px 30px; }
+
+.vkontakte {
+  padding: 47px 18px 46px 17px; }
+
+.avito {
+  padding: 42px 37px 43px 30px; }
+
 @media (max-width: 1900px) and (min-width: 1481px) {
   .main {
     background: url(img/slider.png) 1100px 0 no-repeat, #00093C url(img/points.png) 9px 0 repeat; } }
@@ -1341,6 +1633,16 @@ owl-svg {
   .main {
     background: url(img/slider.png) 787px 0 no-repeat, #00093C url(img/points.png) -234px 17px repeat; } }
 @media (max-width: 1180px) and (min-width: 1025px) {
+  .career-container-aims,
+  .career-container,
+  .career-job-question,
+  .career-container2,
+  .vacancies {
+    max-width: 1024px; }
+
+  .vacancy-link {
+    width: 265px; }
+
   .cloud-question {
     width: 213px;
     left: 269px;
@@ -1498,6 +1800,19 @@ owl-svg {
     max-width: 1024px;
     margin: 0 auto; } }
 @media (max-width: 1024px) and (min-width: 769px) {
+  .career-container-aims,
+  .career-container,
+  .career-job-question,
+  .career-container2,
+  .vacancies {
+    max-width: 768px; }
+
+  .vacancy-link {
+    width: 265px; }
+
+  .graduates-cards {
+    justify-content: space-between; }
+
   .cloud-question {
     width: 213px;
     left: 269px;
@@ -1733,6 +2048,38 @@ owl-svg {
   .event-card-long img {
     object-fit: cover; } }
 @media (max-width: 768px) and (min-width: 425px) {
+  .career-container-aims,
+  .career-container,
+  .career-job-question,
+  .career-container2,
+  .vacancies {
+    max-width: 425px; }
+
+  .vacancy-link {
+    width: 265px; }
+
+  .form-grey {
+    background-color: #E5E5E5; }
+
+  .graduates-cards {
+    justify-content: space-between; }
+
+  .steps {
+    flex-flow: column; }
+
+  .step-svg {
+    top: 42%;
+    left: 42%; }
+
+  .career-container-aims {
+    flex-flow: column; }
+
+  .career-aims {
+    margin-top: 319px; }
+
+  .step-text {
+    width: 425px; }
+
   .cloud-question {
     width: 213px;
     left: 269px;
@@ -1874,8 +2221,6 @@ owl-svg {
   .phone-block {
     width: 100%;
     margin-bottom: 20px; }
-    .phone-block p {
-      display: none; }
 
   .phone-block input {
     width: 281px; }
@@ -2031,6 +2376,16 @@ owl-svg {
   .event-card-long {
     padding: 27px 30px 38px 30px; } }
 @media (max-width: 424px) and (min-width: 375px) {
+  .career-container-aims,
+  .career-container,
+  .career-job-question,
+  .career-container2,
+  .vacancies {
+    max-width: 375px; }
+
+  .vacancy-link {
+    width: 265px; }
+
   .cloud-question {
     width: 213px;
     left: 269px;
@@ -2351,6 +2706,19 @@ owl-svg {
   .event-card-long {
     padding: 27px 30px 38px 30px; } }
 @media (max-width: 374px) {
+  .career-container-aims,
+  .career-container,
+  .career-job-question,
+  .career-container2,
+  .vacancies {
+    max-width: 290px; }
+
+  .vacancy-link {
+    width: 265px; }
+
+  .form-grey {
+    background-color: #E5E5E5; }
+
   .cloud-question {
     width: 213px;
     left: 269px;
